@@ -1,4 +1,5 @@
 angular
 	.module('angularTODO', [
-		'ui-router'
+		'ui-router',
+		'angularTODO.list'
 	]);
