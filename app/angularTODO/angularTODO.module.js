@@ -4,8 +4,8 @@ angular
 		'angularTODO.list'
 	])
 
-	.config(appConfig);
+	.config(angularTODOConfig);
 
-function appConfig($urlRouterProvider) {
+function angularTODOConfig($urlRouterProvider) {
 	$urlRouterProvider.otherwise('/');
 }
