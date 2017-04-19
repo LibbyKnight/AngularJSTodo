@@ -16,37 +16,29 @@ var angularToDo = new Schema({
   todoItem: {
 
     type: String,
-    required: "Category is required."
+    required: "Todo Item is required."
 
   },
 
   dueDate: {
 
     type: Date,
-    required: "Video name is required."
+    required: "A due date is required."
     
   },
 
   isCompleted: {
 
-    type: String,
-    required: "Video is required.",
-    unique: true
+    type: Boolean,
+    default: false
     
-  },
-
-  transcript: {
-
-    type: Object,
-    required: "Transcript is required."
-
   }
 
 });
 
 
-// Create the Steps model with the StepsSchema
-var Instructions = mongoose.model("Instructions", Instructions);
+// Create the Todo model with the Schema
+var angularToDo = mongoose.model("angularToDo", angularToDo);
 
 // Export the model
-module.exports = Instructions;
+module.exports = angularToDo;
