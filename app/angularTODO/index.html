@@ -1,0 +1,42 @@
+<!doctype html>
+<html  lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<title>AngularJS To-Do List</title>
+
+	<!-- angularjs and ui router tags -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+	</head>
+
+	<body ng-app="angularTODO">
+
+	<ui-view></ui-view>
+
+
+	<!-- Injections -->
+
+	<script src="angularTODO/angularTODO.module.js"></script>
+
+	<!-- list Injections -->
+
+	<script src="angularTODO/states/list/list.module.js"</script>
+	<script src="angularTODO/states/list/list.route.js"></script>
+	<script src="angularTODO/states/list/list.controller.js"></script>
+
+	<!-- create Injections -->
+
+	<script src="angularTODO/states/create/create.module.js"</script>
+	<script src="angularTODO/states/create/create.route.js"></script>
+	<script src="angularTODO/states/create/create.controller.js"></script>
+
+	<!-- completed Injections -->
+
+	<script src="angularTODO/states/completed/completed.module.js"</script>
+	<script src="angularTODO/states/completed/completed.route.js"></script>
+	<script src="angularTODO/states/completed/completed.controller.js"></script>
+
+	</body>
+</html>
