@@ -1,14 +1,14 @@
 angular
-	.module('angularTODO.list')
-	.config(listConfig);
+	.module('angularTODO.create')
+	.config(createConfig);
 
-function listConfig($stateProvider) {
+function createConfig($stateProvider) {
 
 	$stateProvider.state({
-		name: 'list',
+		name: 'create',
 		url: '/',
-		templateUrl: '/angularTODO/features/list/list.html',
-		controller: 'ListCtrl',
-		controllerAs: 'ListVM'
+		templateUrl: '/angularTODO/states/create/create.html',
+		controller: 'CreateCtrl',
+		controllerAs: 'CreateVM'
 	})
 }

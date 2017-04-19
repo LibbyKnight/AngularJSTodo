@@ -1,2 +1,2 @@
-angular.module('angularTODO.list', [
+angular.module('angularTODO.create', [
 	]);

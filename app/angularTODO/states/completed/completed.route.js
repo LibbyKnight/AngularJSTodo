@@ -1,14 +1,14 @@
 angular
-	.module('angularTODO.list')
-	.config(listConfig);
+	.module('angularTODO.completed')
+	.config(completedConfig);
 
-function listConfig($stateProvider) {
+function completedConfig($stateProvider) {
 
 	$stateProvider.state({
-		name: 'list',
+		name: 'completed',
 		url: '/',
-		templateUrl: '/angularTODO/features/list/list.html',
-		controller: 'ListCtrl',
-		controllerAs: 'ListVM'
+		templateUrl: '/angularTODO/states/completed/completed.html',
+		controller: 'CompletedCtrl',
+		controllerAs: 'CompletedVM'
 	})
 }

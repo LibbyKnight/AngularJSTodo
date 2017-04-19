@@ -1,7 +1,7 @@
 angular
-	.module('angularTODO.list')
-	.controller('ListCtrl', ListCtrl);
+	.module('angularTODO.create')
+	.controller('CreateCtrl', CreateCtrl);
 
-function ListCtrl() {
+function CreateCtrl() {
 
 }

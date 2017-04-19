@@ -1,7 +1,7 @@
 angular
-	.module('angularTODO.list')
-	.controller('ListCtrl', ListCtrl);
+	.module('angularTODO.completed')
+	.controller('CompletedCtrl', CompletedCtrl);
 
-function ListCtrl() {
+function CompletedCtrl() {
 
 }
